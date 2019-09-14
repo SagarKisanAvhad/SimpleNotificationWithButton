@@ -4,10 +4,9 @@ import android.app.NotificationManager
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationCompat
-import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -38,12 +37,12 @@ class MainActivity : AppCompatActivity() {
                 .setStyle(inboxStyle)
                 .setAutoCancel(true)
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
-                .addAction(R.mipmap.ic_launcher_round,"Stop",pendingIntent)
+                .addAction(R.mipmap.ic_launcher_round, "Stop", pendingIntent)
                 .build()
 
 
-
-            val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+            val notificationManager =
+                getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
             notificationManager.notify(0, notificationBuilder)
 
         }
