@@ -27,13 +27,13 @@ class MainActivity : AppCompatActivity() {
             val pendingIntent = PendingIntent.getActivity(this, 0, intent, 0)
 
             val inboxStyle = NotificationCompat.InboxStyle()
-            inboxStyle.setBigContentTitle("Conveyance Journey")
+            inboxStyle.setBigContentTitle("Journey")
             inboxStyle.addLine("Journey is Started")
 
             val notificationBuilder = NotificationCompat.Builder(this)
-                .setContentTitle("Inbox Style notification")
+                .setContentTitle("NotificationApp")
                 .setSmallIcon(R.mipmap.ic_launcher_round)
-                .setContentText("This is test")
+                .setContentText("Journey Test")
                 .setStyle(inboxStyle)
                 .setAutoCancel(true)
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
