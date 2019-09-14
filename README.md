@@ -1,5 +1,5 @@
 # SimpleNotificationWithButton
-This project is a part of basic android developement.
+This project is a part of basic android development.
 
 This project is showing simple Inbox style notification with button. On click of Button, It navigating to desire activity.
 
