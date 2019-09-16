@@ -8,3 +8,6 @@ Steps:
 2) link this pending intent to button in notification as action
 3) add action that get from step 2 to notification builder
 4) notification manager 
+
+## Found this project useful ❤️
+Support by clicking the ⭐️ button on the upper right of this page. ✌️
